@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "",
   "types": "index.d.ts",
+  "type": "module",
   "scripts": {
     "generate": "node ./src/main.cjs && npm run prettier",
     "prettier": "prettier index.d.ts --write"
