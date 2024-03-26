@@ -1,6 +1,6 @@
 {
   "name": "albion-market-analytics-types",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "types": "index.d.ts",
   "type": "module",
