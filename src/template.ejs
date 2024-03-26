@@ -5,12 +5,12 @@
  }).join('\n');
  %>
 
-type City = 'Thetford' | 'Fort Sterling' | 'Lymhurst' | 'Bridgewatch' | 'Martlock' | 'Caerleon';
-type ItemName = <%- itemNames %>
+export type City = 'Thetford' | 'Fort Sterling' | 'Lymhurst' | 'Bridgewatch' | 'Martlock' | 'Caerleon';
+export type ItemName = <%- itemNames %>
 
 
-type RegionList = {
+export type RegionList = {
 <%- _regions %>
 };
 
-type Region = keyof RegionList;
+export type Region = keyof RegionList;

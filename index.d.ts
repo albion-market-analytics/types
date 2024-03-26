@@ -1,11 +1,11 @@
-type City =
+export type City =
   | "Thetford"
   | "Fort Sterling"
   | "Lymhurst"
   | "Bridgewatch"
   | "Martlock"
   | "Caerleon";
-type ItemName =
+export type ItemName =
   | "UNIQUE_HIDEOUT"
   | "T3_2H_TOOL_TRACKING"
   | "T4_2H_TOOL_TRACKING"
@@ -10692,7 +10692,7 @@ type ItemName =
   | "T8_JOURNAL_FISHING_EMPTY"
   | "T8_JOURNAL_FISHING_FULL";
 
-type RegionList = {
+export type RegionList = {
   Debug: "Debug";
   "ISLAND-GUILD-0001a": "ISLAND-GUILD-0001a_ISL_DL_T1_NON";
   "ISLAND-PLAYER-0001a": "ISLAND-PLAYER-0001a_ISL_DL_T1_NON";
@@ -11999,4 +11999,4 @@ type RegionList = {
   "ISLAND-PLAYER-SWAMP-0001f": "ISLAND-PLAYER-SWAMP-0001f";
 };
 
-type Region = keyof RegionList;
+export type Region = keyof RegionList;
