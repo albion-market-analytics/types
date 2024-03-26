@@ -4,7 +4,8 @@
   "description": "",
   "types": "index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "generate": "node ./src/main.cjs && npm run prettier",
+    "prettier": "prettier index.d.ts --write"
   },
   "repository": {
     "type": "git",
@@ -12,6 +13,8 @@
   },
   "private": true,
   "devDependencies": {
-    "ejs": "^3.1.9"
+    "ejs": "^3.1.9",
+    "axios": "^1.6.8",
+    "prettier": "^3.2.5"
   }
 }
