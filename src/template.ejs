@@ -5,12 +5,12 @@
  }).join('\n');
  %>
 
-declare module 'albion-market-analytics-types' {
-    type City = 'Thetford' | 'Fort Sterling' | 'Lymhurst' | 'Bridgewatch' | 'Martlock' | 'Caerleon';
-    type ItemName = <%- itemNames %>
+type City = 'Thetford' | 'Fort Sterling' | 'Lymhurst' | 'Bridgewatch' | 'Martlock' | 'Caerleon';
+type ItemName = <%- itemNames %>
 
 
-    type RegionList = {
+type RegionList = {
 <%- _regions %>
-    };
-}
+};
+
+type Region = keyof RegionList;
