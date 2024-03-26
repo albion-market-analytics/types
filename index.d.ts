@@ -1,4 +1,4 @@
-declare module "@albion-market-analytics/types" {
+declare module "albion-market-analytics-types" {
   type ItemName =
     | "UNIQUE_HIDEOUT"
     | "T3_2H_TOOL_TRACKING"
