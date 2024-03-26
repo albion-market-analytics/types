@@ -11,7 +11,6 @@
     "type": "git",
     "url": "https://github.com/albion-market-analytics/types.git"
   },
-  "private": true,
   "devDependencies": {
     "ejs": "^3.1.9",
     "axios": "^1.6.8",
