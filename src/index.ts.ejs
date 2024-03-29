@@ -1,0 +1,8 @@
+<%
+const itemNames = '\'' + items.map(item => item.UniqueName).join("' , '") + '\'';
+const _regions = world.map(region => {
+    return `    "${region.Index}": "${region.UniqueName}",`;
+}).join('\n');
+%>
+
+export const items = [<%- itemNames %>] as const;

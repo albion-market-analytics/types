@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "generate": "node ./src/main.cjs && npm run prettier",
-    "prettier": "prettier index.d.ts --write"
+    "prettier": "prettier index.d.ts index.ts --write"
   },
   "repository": {
     "type": "git",
