@@ -12000,3 +12000,5 @@ export type RegionList = {
 };
 
 export type Region = keyof RegionList;
+
+export type Quality = 1 | 2 | 3 | 4 | 5;
