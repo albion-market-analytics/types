@@ -1,0 +1,19 @@
+<%
+const worldNames = world.map(region => region.UniqueName);
+ %>
+
+export const worldNames = ["<%- worldNames.join('", "') %>"] as const;
+
+export type WorldName = typeof worldNames[number];
+
+<%
+ const worldMeta = {};
+
+ for(const region of world) {
+        worldMeta[region.UniqueName] = {
+            index: region.Index,
+        };
+ }
+ %>
+
+export const worldMeta = <%- JSON.stringify(worldMeta) %>;

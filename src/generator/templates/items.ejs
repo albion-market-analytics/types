@@ -1,0 +1,21 @@
+<%
+ const itemNames = items.map(item => item.UniqueName);
+ %>
+
+export const itemNames = ['<%- itemNames.join("', '") %>'] as const;
+
+export type ItemNames = typeof itemNames[number];
+
+<%
+const itemMeta = {};
+
+for(const item of items) {
+ itemMeta[item.UniqueName] = {
+  index: item.Index,
+  localizationNameVariable: item.LocalizationNameVariable,
+  localizationDescriptionVariable: item.LocalizationDescriptionVariable,
+ };
+}
+ %>
+
+export const itemMeta = <%- JSON.stringify(itemMeta) %> as const;

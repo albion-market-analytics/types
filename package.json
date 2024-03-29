@@ -2,19 +2,22 @@
   "name": "albion-market-analytics-types",
   "version": "1.2.0",
   "description": "",
-  "types": "index.d.ts",
+  "main": "src/index.ts",
   "type": "module",
   "scripts": {
-    "generate": "node ./src/main.cjs && npm run prettier",
-    "prettier": "prettier index.d.ts index.ts --write"
+    "generate": "node src/generator/main.cjs && npm run prettier",
+    "prettier": "prettier src --write"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/albion-market-analytics/types.git"
   },
   "devDependencies": {
-    "ejs": "^3.1.9",
     "axios": "^1.6.8",
+    "ejs": "^3.1.9",
     "prettier": "^3.2.5"
+  },
+  "dependencies": {
+    "fs-extra": "^11.2.0"
   }
 }

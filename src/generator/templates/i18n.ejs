@@ -1,0 +1,8 @@
+<%
+    const dict = {};
+    for(const item of items) {
+        dict[item.LocalizationNameVariable] = item.LocalizedNames?.[language] ?? item.LocalizationNameVariable;
+        dict[item.LocalizationDescriptionVariable] = item.LocalizedDescriptions?.[language] ?? item.LocalizationDescriptionVariable;
+    }
+ %>
+<%- JSON.stringify(dict) %>
